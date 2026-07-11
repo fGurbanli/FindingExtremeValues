@@ -54,6 +54,14 @@ void ReadIntArray(int nums[], int len)
  *
  * Return:       -
  */
+void PrintArray(int nums[], int len)
+{
+    for (int i = 0; i < len; i++)
+    {
+        printf("%d ", nums[i]);
+    }
+}
+
 
 /**
  * Description:  Find the maximum value from the nums array and returns it
