@@ -46,7 +46,7 @@ int FindMaximumValue(int num[], int len)
             maxVal = num[i];
             maxCount = 1; //resetting count
         }
-        else if (num[i] == maxVal) maxCount++;
+        else if (num[i] == maxVal) maxCount++; //adds +1 to count
     }
 
     printf("\nMaximum value is: %d", maxVal);
@@ -55,7 +55,7 @@ int FindMaximumValue(int num[], int len)
 
     for (int i = 0; i < len; i++)
     {
-        if (num[i] == maxVal) printf("%d ", i + 1);
+        if (num[i] == maxVal) printf("%d ", i + 1); //prints positions
     }
     return maxVal;
 }
@@ -71,14 +71,14 @@ int FindMinimumValue(int num[], int len)
             minVal = num[i];
             minCount = 1; //resetting count
         }
-        else if (num[i] == minVal) minCount++;
+        else if (num[i] == minVal) minCount++; //adds +1 to count
     }
     printf("\n\nMinimum value is: %d", minVal);
     printf("\nMinimum value occurred %d times", minCount);
     printf("\nMinimum value positions: ");
     for (int i = 0; i < len; i++)
     {
-        if (num[i] == minVal) printf("%d ", i + 1);
+        if (num[i] == minVal) printf("%d ", i + 1); //prints positions
     }
     return minVal;
 }
