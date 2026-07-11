@@ -8,13 +8,13 @@ int FindMinimumValue(int num[], int len);
 int main(void)
 {
 
-    int lenght = 6;
-    int numbers[lenght];
+    int length = 6;
+    int numbers[length];
 
-    ReadIntArray(numbers, lenght);
-    PrintArray(numbers, lenght);
-    int MaxVal = FindMaximumValue(numbers, lenght);
-    int MinVal = FindMinimumValue(numbers, lenght);
+    ReadIntArray(numbers, length);
+    PrintArray(numbers, length);
+    int MaxVal = FindMaximumValue(numbers, length);
+    int MinVal = FindMinimumValue(numbers, length);
     printf("\nMaximum value is: %d\n", MaxVal);
     printf("Minimum value is: %d\n", MinVal);
     return 0;
