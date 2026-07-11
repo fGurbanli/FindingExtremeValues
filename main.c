@@ -12,7 +12,7 @@
 #include <stdio.h>
 
 void ReadIntArray(int nums[], int len);
-void PrintArray();
+void PrintArray(int nums[], int len);
 int FindMaximumValue(int num[], int len);
 int FindMinimumValue(int num[], int len);
 
@@ -54,11 +54,6 @@ void ReadIntArray(int nums[], int len)
  *
  * Return:       -
  */
-void PrintArray()
-{
-
-}
-
 
 /**
  * Description:  Find the maximum value from the nums array and returns it
@@ -72,7 +67,7 @@ void PrintArray()
 int FindMaximumValue(int num[], int len)
 {
     int maxVal = num[0];
-    for(int i = 0; i < len; i++)
+    for(int i = 1; i < len; i++)
     {
         if (num[i] > num [maxVal])
         {
@@ -90,4 +85,15 @@ int FindMaximumValue(int num[], int len)
  *
  * Return:       Minimum value in the array
  */
-
+int FindMinimumValue(int num[], int len)
+{
+    int minVal = num[0];
+    for(int i = 1; i < len; i++)
+    {
+        if (num[i] < num [minVal])
+        {
+            minVal = num[i];
+        }
+    }
+    return minVal;
+}
