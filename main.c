@@ -13,6 +13,8 @@
 
 void ReadIntArray(int nums[], int len);
 void PrintArray();
+int FindMaximumValue(int num[], int len);
+int FindMinimumValue(int num[], int len);
 
 int main(void)
 {
@@ -52,10 +54,10 @@ void ReadIntArray(int nums[], int len)
  *
  * Return:       -
  */
-//~ PrintArray()
-//~ {
+void PrintArray()
+{
 
-//~ }
+}
 
 
 /**
@@ -67,7 +69,18 @@ void ReadIntArray(int nums[], int len)
  * Return:       Maximum value in the nums array
  */
 
-
+int FindMaximumValue(int num[], int len)
+{
+    int maxVal = num[0];
+    for(int i = 0; i < len; i++)
+    {
+        if (num[i] > num [maxVal])
+        {
+           maxVal = num[i];
+        }
+    }
+    return maxVal;
+}
 
 /**
  * Description:  Find the minimum value from the nums array and returns it
@@ -77,3 +90,4 @@ void ReadIntArray(int nums[], int len)
  *
  * Return:       Minimum value in the array
  */
+
